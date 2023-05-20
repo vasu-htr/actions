@@ -1,15 +1,14 @@
-name: Monthly charges deduction
+name: Scheduled URL Test
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '*/1 * * * *' # Runs on the 1st day of every month at 00:00 UTC
+    - cron: '*/1 * * * *' # Runs every minute
 
 jobs:
-  run-api:
+  test-url:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Run Monthly charges deduction API
+      - name: Test URL
         run: |
-        curl -I http://192.168.29.116:8090/api/v1/open/cities
+          curl -I http://192.168.29.116:8090/
