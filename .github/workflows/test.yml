@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Test URL
         run: |
-          curl https://87e8-2405-201-d003-1bdd-f58c-c195-7aa2-56a1.ngrok-free.app/api/v1/open/cities
+          curl https://webhook.site/e8f22772-d7d6-4ef4-9324-aea57abfc879
