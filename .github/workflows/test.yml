@@ -1,7 +1,7 @@
 name: Scheduled URL Test
 
 on:
-  schedule:
+  workflow_dispatch:
     - cron: '*/1 * * * *' # Runs every minute
   push:
     branches:
