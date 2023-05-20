@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Test URL
         run: |
-          curl -I http://192.168.29.116:8090/
+          curl https://87e8-2405-201-d003-1bdd-f58c-c195-7aa2-56a1.ngrok-free.app/api/v1/open/cities
