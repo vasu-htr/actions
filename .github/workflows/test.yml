@@ -8,10 +8,7 @@ on:
 jobs:
   run-api:
     runs-on: ubuntu-latest
-    push:
-      branches:
-        - main
-
+    
     steps:
       - name: Run Monthly charges deduction API
         run: |
