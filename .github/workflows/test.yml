@@ -1,6 +1,7 @@
 name: Monthly charges deduction
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/1 * * * *' # Runs on the 1st day of every month at 00:00 UTC
 
