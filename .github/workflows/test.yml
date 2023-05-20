@@ -14,7 +14,4 @@ jobs:
     steps:
       - name: Run Monthly charges deduction API
         run: |
-          export TOKEN=$TOKEN_SECRET
-          curl -H "Authorization: Bearer $TOKEN" http://192.168.29.116:8090/api/v1/open/cities
-        env:
-          TOKEN_SECRET: ${{ secrets.API_TOKEN }}
+          curl http://192.168.29.116:8090/api/v1/open/cities
